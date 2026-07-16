@@ -1,0 +1,20 @@
+//技能定义
+class skill{
+    public:
+    string name;
+    string inform;
+    void setskillname(string sname,string sinform){
+        name = sname;
+        inform = sinform;
+    }
+    void showskillinform();
+    virtual void use(character& player,character& anm) = 0;
+    virtual ~skill() = default;
+    };
+//////////////////////
+    //////初始化技能///////////////////////////////
+class sheild : public skill{
+    void use(character& player,character& anm){
+
+    }
+};
